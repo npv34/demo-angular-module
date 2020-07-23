@@ -1,0 +1,27 @@
+<div class="card mt-4">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <button routerLink="add" class="btn btn-success">Create</button>
+    <table class="table">
+      <thead class="thead-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col"></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users; index as i">
+        <th scope="row">{{ i + 1}}</th>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td><button class="btn btn-primary" [routerLink]="[user.id, 'edit']">Edit</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demo-service-route"
+    }
+  },
+  "defaultProject": "demo-service-route",
+  "cli": {
+    "analytics": "23144607-62c8-41fc-be97-1253aa545947"
+  }
 }
